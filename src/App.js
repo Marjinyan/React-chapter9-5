@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Song from './Song'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Playlist</h1>
+      
+      <Song
+          title    = "I have Nothing"
+          singer   = "Whitney Houston"
+          duration = "3" 
+      />
+      <Song
+           title    = "Imagine"
+           singer   = "John Lennon"
+           duration = "5.3"
+      />
+      <Song
+          title    = "Yesterday"
+          singer   = "The Beatles"
+          duration = "4.2" 
+      />
     </div>
-  );
+  )
 }
-
-export default App;
+export default App
